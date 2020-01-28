@@ -4,33 +4,68 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Traffic Cop-Edit</title>
+    <title>Traffic Cop</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
     <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
+    <link rel="stylesheet" href="assets/css/Footer-Dark.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/css/swiper.min.css">
     <link rel="stylesheet" href="assets/css/Login-Form-Dark.css">
     <link rel="stylesheet" href="assets/css/Navigation-with-Button.css">
     <link rel="stylesheet" href="assets/css/Registration-Form-with-Photo.css">
+    <link rel="stylesheet" href="assets/css/Services.css">
+    <link rel="stylesheet" href="assets/css/Simple-Slider.css">
+    <link rel="stylesheet" href="assets/css/slider-with-popup.css">
     <link rel="stylesheet" href="assets/css/styles.css">
+
+    <style>
+    .column {
+  float: left;
+  width: 50%;
+  }
+
+  /* Clear floats after the columns */
+  .row:after {
+  content: "";
+  display: table;
+  clear: both;
+  } </style>
+
 </head>
 
 <body>
-    <nav class="navbar navbar-light navbar-expand-md navigation-clean-button">
-        <div class="container"><a class="navbar-brand" href="index.html">Traffic Cop</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse"
-                id="navcol-1">
-                <ul class="nav navbar-nav mr-auto">
-                    <li class="nav-item" role="presentation"><a class="nav-link active" href="#">First Item</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="#">Second Item</a></li>
-                    <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#">Dropdown </a>
-                        <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="#">First Item</a><a class="dropdown-item" role="presentation" href="#">Second Item</a><a class="dropdown-item" role="presentation" href="#">Third Item</a></div>
-                    </li>
-                </ul><span class="navbar-text actions"> <a class="login" href="login.html">Log In</a><a class="btn btn-light action-button" role="button" href="signup.html" style="background-color: rgb(33,74,128);">Sign Up</a></span></div>
-        </div>
-    </nav>
+  <nav class="navbar navbar-light navbar-expand-md navigation-clean-button">
+      <div class="container"><a class="navbar-brand" href="index.html">Traffic Cop</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+          <div class="collapse navbar-collapse"
+              id="navcol-1">
+              <ul class="nav navbar-nav mr-auto">
+                  <li class="nav-item" role="presentation"><a class="nav-link" href="publicinsights.html">View insights</a></li>
+                  <li class="nav-item" role="presentation"><a class="nav-link" href="login.html">Report your incident</a></li>
+
+              </ul><span class="navbar-text actions"> <a class="login" href="login.html">Log In</a><a class="btn btn-light action-button" role="button" href="signup.html" style="background-color: rgb(33,74,128);">Sign Up</a></span></div>
+      </div>
+  </nav>
     <h1 class="text-center" style="color: rgb(33,74,128);">Insights</h1>
+    <div class="row">
+        <div  class="column"> <iframe style="width:100%;height:85vh" src="http://localhost/trafficcop/insights-pie.php"  frameBorder="0"></iframe></div>
+        <div  class="column"> <iframe style="width:100%;height:85vh"  src="http://localhost/trafficcop/insights-bar.php"  frameBorder="0"></iframe></div>
+        <div  class="column"> <iframe style="width:1440px;height:85vh"  src="http://localhost/trafficcop/insights-geo.php"  frameBorder="0"></iframe></div>
+
+
+    </div>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.jquery.min.js"></script>
+    <script src="assets/js/Simple-Slider.js"></script>
     <script src="assets/js/untitled.js"></script>
 </body>
-
+<div class="footer-dark" style="background-color: rgb(33,74,128);height: 97px;">
+    <footer>
+        <div class="container">
+            <p class="copyright" style="margin-top: -30px;">Traffic Cop © 2020</p>
+        </div>
+    </footer>
+</div>
 </html>

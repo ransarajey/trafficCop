@@ -4,42 +4,60 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Traffic Cop-Edit</title>
+    <title>Traffic Cop</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
     <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
+    <link rel="stylesheet" href="assets/css/Footer-Dark.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/css/swiper.min.css">
     <link rel="stylesheet" href="assets/css/Login-Form-Dark.css">
     <link rel="stylesheet" href="assets/css/Navigation-with-Button.css">
     <link rel="stylesheet" href="assets/css/Registration-Form-with-Photo.css">
+    <link rel="stylesheet" href="assets/css/Services.css">
+    <link rel="stylesheet" href="assets/css/Simple-Slider.css">
+    <link rel="stylesheet" href="assets/css/slider-with-popup.css">
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
-<body>
-    <div class="login-dark" style="background-image: url(&quot;none&quot;);background-color: rgb(255,255,255);"><form action="php/signup.php" method="post">
-    <h2 class="sr-only">Login Form</h2>
-    <div class="illustration"><i class="icon ion-ios-locked-outline"></i><input type="text" class="form-control" name="name" placeholder="Name" /></div>
-    <div class="form-group"><input type="email" class="form-control" name="email" placeholder="Email" required /></div>
-    <div class="form-group"><input type="password" class="form-control" name="password" placeholder="Password" required /><input type="password" class="form-control" name="confirmPassword" placeholder="Confirm Password" style="margin-top: 15px;" required /></div>
-    <div class="form-group"><input type="text" class="form-control" name="vehicleNO" placeholder="Vehicle Registration No." required /></div><select class="bg-dark form-control" style="filter: blur(0px) brightness(95%);background-color: rgba(59,68,77,0);font-size: 16px;letter-spacing: 0px;"
-        required name="vehicleType"><option value="undefined">Select vehicle type</option><option value="car">Car</option><option value="bike">Bike</option><option value="van">Van</option></select><input type="text" class="form-control" name="insuranceNO"
-        placeholder="Insurance No" required style="margin-right: 0;margin-bottom: 15px;" /><select class="bg-dark form-control" style="filter: blur(0px) brightness(95%);background-color: rgba(59,68,77,0);font-size: 16px;letter-spacing: 0px;" required name="insuranceCompany"><option value="undefined">Select an insurance company</option><option value="ceylinco">Ceylinco Insurance</option><option value="fairfirst">Fairfirst Insurance</option><option value="janashakthi">Janashakthi Insurance</option></select>
-    <div
-        class="form-group"><button class="btn btn-primary btn-block" type="submit">Sign Up</button></div><a class="forgot" href="login.html">Already have an account? Log in</a></form>
-        <nav class="navbar navbar-light navbar-expand-md navigation-clean-button">
-            <div class="container"><a class="navbar-brand" href="index.html">Traffic Cop</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse"
-                    id="navcol-1">
-                    <ul class="nav navbar-nav mr-auto">
-                        <li class="nav-item" role="presentation"><a class="nav-link active" href="#">First Item</a></li>
-                        <li class="nav-item" role="presentation"><a class="nav-link" href="#">Second Item</a></li>
-                        <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#">Dropdown </a>
-                            <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="#">First Item</a><a class="dropdown-item" role="presentation" href="#">Second Item</a><a class="dropdown-item" role="presentation" href="#">Third Item</a></div>
-                        </li>
-                    </ul><span class="navbar-text actions"> <a class="login" href="login.html">Log In</a><a class="btn btn-light action-button" role="button" href="signup.html" style="background-color: rgb(33,74,128);">Sign Up</a></span></div>
+<body >
+    <div class="login-dark" style="background-image: url(http://localhost/trafficcop/assets/img/bg-traffic.jpg);background-color: rgb(255,255,255); height:1200px;">
+        <form action="./php/signup.php" method="post" style="margin-top: 20px;">
+            <h2 class="sr-only">Login Form</h2>
+            <div class="illustration"><i class="fas fa-user"></i><input class="form-control" type="text" name="firstname" placeholder="First name"><input class="form-control" type="text" name="lastname" placeholder="Last name" style="margin-top: 21px;"></div>
+            <div class="form-group"><input class="form-control" type="email" name="email" placeholder="Email" required=""><input class="form-control" type="text" name="Username" placeholder="Username" required="" style="margin-top: 24px;"></div>
+            <div class="form-group"><input class="form-control" type="password" name="password" placeholder="Password" required=""><input class="form-control" type="password" name="password2" placeholder="Confirm Password" style="margin-top: 15px;" required=""></div>
+            <div class="form-group"><input class="form-control" type="text" name="vehicleNo" placeholder="Vehicle Registration No." required=""></div><select class="bg-dark form-control" style="filter: blur(0px) brightness(95%);background-color: rgba(59,68,77,0);font-size: 16px;letter-spacing: 0px;"
+                required="" name="vehicleType"><option value="undefined">Select vehicle type</option><option value="car">Car</option><option value="bike">Bike</option><option value="van">Van</option></select><input class="form-control" type="text" name="insuranceNo"
+                placeholder="Insurance No" required="" style="margin-right: 0;margin-bottom: 15px;"><select class="bg-dark form-control" style="filter: blur(0px) brightness(95%);background-color: rgba(59,68,77,0);font-size: 16px;letter-spacing: 0px;" required=""
+                name="insuranceCompany"><option value="undefined">Select an insurance company</option><option value="ceylinco">Ceylinco Insurance</option><option value="fairfirst">Fairfirst Insurance</option><option value="janashakthi">Janashakthi Insurance</option></select>
+            <div
+                class="form-group"><button class="btn btn-primary btn-block" type="submit">Sign Up</button></div><a class="forgot" href="login.html">Already have an account? Log in</a></form>
+                <nav class="navbar navbar-light navbar-expand-md navigation-clean-button">
+                    <div class="container"><a class="navbar-brand" href="index.html">Traffic Cop</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                        <div class="collapse navbar-collapse"
+                            id="navcol-1">
+                            <ul class="nav navbar-nav mr-auto">
+                                <li class="nav-item" role="presentation"><a class="nav-link" href="publicinsights.html">View insights</a></li>
+                                <li class="nav-item" role="presentation"><a class="nav-link" href="login.html">Report your incident</a></li>
+
+                            </ul><span class="navbar-text actions"> <a class="login" href="login.html">Log In</a><a class="btn btn-light action-button" role="button" href="signup.html" style="background-color: rgb(33,74,128);">Sign Up</a></span></div>
+                    </div>
+                </nav>
+    <h1 class="text-center" style="color: rgb(255,255,255);">Sign Up</h1>
+    </div>
+    <div class="footer-dark" style="background-color: rgb(33,74,128);height:97px ; margin-top:0px;">
+        <footer>
+            <div class="container">
+                <p class="copyright" style="margin-top: -30px;">Traffic Cop © 2020</p>
             </div>
-        </nav>
+        </footer>
     </div>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.jquery.min.js"></script>
+    <script src="assets/js/Simple-Slider.js"></script>
     <script src="assets/js/untitled.js"></script>
 </body>
 

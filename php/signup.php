@@ -1,40 +1,39 @@
 <?php
+$servername="localhost";
+$username="root";
+$password="";
+$dbname="trafficcop";
 
-      $con = mysqli_connect('localhost','root','','trafficcop');
+$conn= new mysqli($servername,$username,$password, $dbname);
 
-      if(mysqli_connect_errno())
-      {
-        die("Connection failed" . mysqli_connect_errno());
-      }
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+echo "Connected successfully";
 
-      if (isset($_POST['name'], $_POST['email'], $_POST['password'], $_POST['vehicleNO'], $_POST['vehicleType'], $_POST['insuaranceNO'], $_POST['insuaranceCompany']))
-      {
-        // receive all input values from the form
-        $name = $_POST['name'];
-        $email = $_POST['email'];
-        $password = $_POST['password'];
-        $vehicleNO = $_POST['vehicleNO'];
-        $vehicleType = $_POST['vehicleType'];
-        $insuaranceNO = $_POST['insuaranceNO'];
-        $insuaranceCompany = $_POST['insuaranceCompany'];
-
-          $insert ="INSERT INTO user (name,email,password,vehicleNO,vehicleType,insuaranceNO,insuaranceCompany) VALUES ('{$name}','{$email}','{$password}','{$vehicleNO}','{$vehicleType}', '{$insuaranceNO}', '{$insuaranceCompany}')";
-
-          $result = mysqli_query($con, $insert);
-
-          if($result)
-          {
-            echo "Registration Successful!";;
-          }
-          else
-          {
-            echo "Registration failed!";
-          }
+$fname= $_POST["firstname"];
+$lname=$_POST["lastname"];
+$email=$_POST["email"];
+$username=$_POST["Username"];
+$pass=$_POST["password"];
+$type= "user";
+$vehicleNo=$_POST["vehicleNo"];
+$vehicleType=$_POST["vehicleType"];
+$insuaranceNo=$_POST["insuranceNo"];
+$insuranceCompany=$_POST["insuranceCompany"];
 
 
-        mysqli_close($con);
+$sql = "INSERT INTO users (fname,lname,email,username,password,type,vehicleNo,vehicleType,insuaranceNo,insuaranceCompany) VALUES ('$fname','$lname','$email','$username','$pass','$type','$vehicleNo','$vehicleType','$insuaranceNo','$insuranceCompany')";
 
-        header("refresh:2 url=../login.html");
-      }
+if ($conn->query($sql) === TRUE) {
+    echo '<script language="javascript">';
+	echo 'window.location.href="../login.html";';
+	echo '</script>';
+
+} else {
+    echo "Error: " . $sql . "<br>" . $conn->error;
+}
+
+$conn->close();
 
 ?>
